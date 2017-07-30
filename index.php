@@ -24,3 +24,6 @@ $qwe = $fileProcessor->strReplace(4, 'TTTTTTTTTTTTT');
 //include_once 'templates/index.php';
 $fileProcessor->close();
 
+
+
+//added some string to test git
