@@ -12,36 +12,59 @@
     <div>
         <h3>File Conetnt:</h3>
         <div>
-            
+            <?=$fileProcessor->readGets(-1);?>
         </div>
     </div>
     <div>
         <h3>Get 4th string</h3>
         <div>
-            
+           <?=$fileProcessor->readGets(4);?> 
         </div>
     </div>
-    
-    Get 4th symbol
-    
+    <div>
+        <h3>Get 4th symbol</h3>
+        <div>
+           <?=$fileProcessor->readGetc(4);?> 
+        </div>
+    </div>
     <div>
         <h3>replace 6th text line</h3>
         <div>
             <h5>file before:</h5>
             <div>
-                
+               <?=$fileProcessor->readGets(-1);?> 
             </div>
             <h5>file after:</h5>
             <div>
-                
+                <?php
+                $fStr = $fileProcessor->strReplace(6,$offset);
+                //$fileProcessor->readGets(-1);
+                ?>
+            </div>
+            
+        </div>
+    </div>
+        <div>
+        <h3>replace 8th symbol</h3>
+        <div>
+            <h5>file before:</h5>
+            <div>
+               <?=$fileProcessor->readGets(-1);?>  
+            </div>
+            <h5>file after:</h5>
+            <div>
+                <?php
+                $fChr = $fileProcessor->chrReplace(8,$offset);
+                echo $fChr;
+                //$fileProcessor->readGets(-1);
+                ?>
             </div>
             
         </div>
     </div>
     
-    
 
-        <?=$qwe?>
+        
         
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
