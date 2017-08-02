@@ -9,67 +9,49 @@
     <link href="css/bootstrap-theme.min.css" rel="stylesheet">
 </head>
 <body>
-    <div>
+    <div class="panel panel-default">
         <h3>File Conetnt:</h3>
-        <div>
-            <?=$fileProcessor->readGets(-1);?>
+        <div class="panel-heading">
+            <?=nl2br($fileProcessor->readGets(-1))?>
         </div>
-    </div>
-    <div>
-        <h3>Get 4th string</h3>
-        <div>
-           <?=$fileProcessor->readGets(4);?> 
-        </div>
-    </div>
-    <div>
-        <h3>Get 4th symbol</h3>
-        <div>
-           <?=$fileProcessor->readGetc(4);?> 
-        </div>
-    </div>
-    <div>
-        <h3>replace 6th text line</h3>
-        <div>
-            <h5>file before:</h5>
-            <div>
-               <?=$fileProcessor->readGets(-1);?> 
-            </div>
-            <h5>file after:</h5>
-            <div>
-                <?php
-                $fStr = $fileProcessor->strReplace(6,$offset);
-                //$fileProcessor->readGets(-1);
-                ?>
-            </div>
-            
-        </div>
-    </div>
-        <div>
-        <h3>replace 8th symbol</h3>
-        <div>
-            <h5>file before:</h5>
-            <div>
-               <?=$fileProcessor->readGets(-1);?>  
-            </div>
-            <h5>file after:</h5>
-            <div>
-                <?php
-                $fChr = $fileProcessor->chrReplace(8,$offset);
-                echo $fChr;
-                //$fileProcessor->readGets(-1);
-                ?>
-            </div>
-            
-        </div>
-    </div>
-    
 
-        
-        
+        <h3>Get 4th string</h3>
+        <div class="panel-heading">
+           <?=nl2br($fileProcessor->readGets(1, 3))?> 
+        </div>
+
+        <h3>Get 4th symbol</h3>
+        <div class="panel-heading">
+           <?=nl2br($fileProcessor->readGetc(1, 3))?> 
+        </div>
+
+        <h3>Replace 6th text line</h3>
+        <h4 style=" color: red">file before:</h4>
+        <div class="panel-heading">
+        <?=nl2br($fileProcessor->readGets(-1))?> 
+        </div>
+        <?php $fileProcessor->strReplace(6, $stringToReplace)?>
+        <h4 style=" color: red">file after:</h4>
+        <div class="panel-heading">
+        <?=nl2br($fileProcessor->readGets(-1))?>
+        </div>
+
+        <h3>Replace 6th symbol</h3>
+        <h4 style=" color: red">file before:</h4>
+        <div class="panel-heading">
+           <?=nl2br($fileProcessor->readGets(-1))?>  
+        </div>
+        <?php $fileProcessor->chrReplace(6, $charToReplace)?>
+        <h4 style=" color: red">file after:</h4>
+        <div class="panel-heading">
+            <?=nl2br($fileProcessor->readGets(-1))?>  
+        </div>
+    </div>
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-    
+
 </body>
 </html> 

@@ -1,12 +1,12 @@
-Lore ---Replacement string----  ipsum dolor sit amet, consectetur adipiscing elit. 
+Lore ipsum dolor sit amet, consectetur adipiscing elit. 
 Vivamus aliquet gravida massa quis maximus. 
 Vivamus dictum enim sit amet metus gravida eleifend. 
-Vivamus vel lorem urna. Praesent in libero quis elit semper aliquam. 
+Vivamus vel lorem urna. 
+Praesent in libero quis elit semper aliquam. 
 Mauris sit amet quam in augue consequat semper. 
 Curabitur dui odio, laoreet eget leo in, ullamcorper iaculis tortor. 
 Sed ultrices malesuada placerat. 
 Mauris dignissim leo ipsum, consectetur iaculis ante mollis eget.
-aaaa
 Praesent turpis nunc, accumsan ut elit vel, placerat posuere massa. 
 Sed imperdiet, velit non pretium ullamcorper, massa nulla maximus tortor, sed condimentum massa sapien vel diam. 
 Maecenas et orci tempor, auctor neque sed, aliquet ligula. 
@@ -14,7 +14,6 @@ Suspendisse egestas libero a varius tincidunt.
 Vestibulum efficitur non sapien in blandit. 
 Morbi ut nisl nec urna feugiat condimentum. Suspendisse ullamcorper lorem eu lorem maximus tristique. 
 Sed vel metus a risus hendrerit volutpat.
-wwww
 
 Mauris metus augue, tempor in fermentum vitae, aliquam in lectus. 
 Suspendisse rhoncus rhoncus ligula, sed condimentum sem consectetur quis. 
@@ -30,7 +29,6 @@ Etiam vestibulum vel dui et convallis.
 Morbi vitae massa et lorem suscipit ornare. 
 In at dapibus risus, vel convallis mi. 
 Vivamus rutrum nec risus sed porttitor.
-eeeee
 
 Vivamus ac vestibulum metus, ut congue ex. 
 Proin ut tincidunt magna. Proin pretium ac erat ac consequat. 
@@ -53,5 +51,4 @@ Sed eget velit id nulla accumsan vulputate.
 Cras varius dignissim feugiat. 
 Mauris vel diam lacus. 
 Pellentesque egestas dapibus nisl nec mollis.
-rrrrr
-idx=3
+
